@@ -4,7 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -24,20 +23,39 @@
       </div>
       <div class="header___middle__part">
         <ul>
-          <li>
-            <a href="#" class="active___home"
+          <li class="">
+            <a href="#" class="active___home active_____list"
               >Home
-              <span class="iconify" data-icon="akar-icons:chevron-down"></span
-            ></a>
+              <span class="iconify" data-icon="akar-icons:chevron-down"></span>
+              <div class="main____cat___div">
+                <ul id="home___cat">
+                  <li>
+                    <a href="#"><img src="cat-1.png" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="cat-2.png" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="cat-1.png" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="cat-2.png" /></a>
+                  </li>
+                  <li>
+                    <a href="#"><img src="cat-1.png" /></a>
+                  </li>
+                </ul>
+              </div>
+            </a>
           </li>
           <li>
-            <a href="#"
+            <a href="#" onmouseenter="shopCategory(this)"
               >Shop
               <span class="iconify" data-icon="akar-icons:chevron-down"></span
             ></a>
           </li>
           <li>
-            <a href="#"
+            <a href="#" class="pages____cat" onmouseenter="pageCategory(this)"
               >Pages
               <span class="iconify" data-icon="akar-icons:chevron-down"></span
             ></a>
@@ -75,8 +93,10 @@
           </li>
           <div class="icon___bedge1">2</div>
           <li>
-            <a href="#"><p class="header____icon" id="search______bar">
-                <span class="iconify" data-icon="akar-icons:search"></span></p></a>
+            <a href="#"
+              ><p class="header____icon" id="search______bar">
+                <span class="iconify" data-icon="akar-icons:search"></span></p
+            ></a>
           </li>
         </ul>
       </div>
@@ -86,34 +106,806 @@
     <!-- search bar start -->
     <div class="admin____overlay"></div>
     <div class="search_____bar" id="main___search___bar">
-
-        <form>
-          <input type="search" id="gsearch" />
-          <button type="submit">SEARCH</button>
-          <p class="search____cross____icon" id="cross_____icon"><span class="iconify" data-icon="gridicons:cross-circle"></span></p>
-        </form>
+      <form>
+        <input type="search" id="gsearch" />
+        <button type="submit">SEARCH</button>
+        <p class="search____cross____icon" id="cross_____icon">
+          <span class="iconify" data-icon="gridicons:cross-circle"></span>
+        </p>
+      </form>
     </div>
     <!-- search bar end -->
 
-
     <!-- category start -->
-    <div class="main____cat___div">
-      <ul>
-        <li><a href="#"><img src="cat-1.png"></a></li>
-        <li><a href="#"><img src="cat-2.png"></a></li>
-        <li><a href="#"><img src="cat-1.png"></a></li>
-        <li><a href="#"><img src="cat-2.png"></a></li>
-        <li><a href="#"><img src="cat-1.png"></a></li>
-      </ul>
 
-    </div>
+    <!-- <div class="shop___cat___div" id="shop__cat">
+      <ul>
+        <div>
+          <li class="cat___title fw-bold">Lorem, ipsum dolor.</li>
+          <br />
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+        </div>
+      </ul>
+      <ul>
+        <div>
+          <li class="cat___title fw-bold">Lorem, ipsum dolor.</li>
+          <br />
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+        </div>
+      </ul>
+      <ul>
+        <div>
+          <li class="cat___title fw-bold">Lorem, ipsum dolor.</li>
+          <br />
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+          <li>
+            <a href="#" class="text-dark cat____list">Lorem, ipsum dolor.</a>
+          </li>
+        </div>
+      </ul>
+      <ul>
+        <li>
+          <a href="#"><img src="cat-1.png" /></a>
+        </li>
+      </ul>
+    </div> -->
+    <!-- <div class="page____cat" id="page__cat">
+      <ul>
+        <li><a href="#" class="text-dark">Lorem, ipsum dolor.</a></li>
+        <li><a href="#" class="text-dark">Lorem, ipsum dolor.</a></li>
+        <li><a href="#" class="text-dark">Lorem, ipsum dolor.</a></li>
+        <li><a href="#" class="text-dark">Lorem, ipsum dolor.</a></li>
+        <li><a href="#" class="text-dark">Lorem, ipsum dolor.</a></li>
+        <li><a href="#" class="text-dark">Lorem, ipsum dolor.</a></li>
+      </ul>
+    </div> -->
     <!-- category end -->
 
+    <!-- category slider start -->
+    <!-- <div class="category____slider mt-2">
+      <div class="total___cat ">
+        <div class="cat____img">
+          <a href="#"><img src="cat-2.png" /></a>
+        </div>
+        <div class="product___details mt-4">
+          <p><a href="#" class="text-dark product___name">Tea Lights</a></p>
+          <p class="text-muted product____info">
+            <a href="#" class="text-dark product___name">9 Products</a>
+          </p>
+          <p class="text-muted view___info">
+            <a href="#" class="text-dark product___name"
+              >View All <span class="iconify" data-icon="bi:arrow-right"></span
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div class="total___cat">
+        <div class="cat____img">
+          <a href="#"><img src="cat-2.png" /></a>
+        </div>
+        <div class="product___details mt-4">
+          <p><a href="#" class="text-dark product___name">Tea Lights</a></p>
+          <p class="text-muted product____info">
+            <a href="#" class="text-dark product___name">9 Products</a>
+          </p>
+          <p class="text-muted view___info">
+            <a href="#" class="text-dark product___name"
+              >View All <span class="iconify" data-icon="bi:arrow-right"></span
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div class="total___cat">
+        <div class="cat____img">
+          <a href="#"><img src="cat-2.png" /></a>
+        </div>
+        <div class="product___details mt-4">
+          <p><a href="#" class="text-dark product___name">Tea Lights</a></p>
+          <p class="text-muted product____info">
+            <a href="#" class="text-dark product___name">9 Products</a>
+          </p>
+          <p class="text-muted view___info">
+            <a href="#" class="text-dark product___name"
+              >View All <span class="iconify" data-icon="bi:arrow-right"></span
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div class="total___cat">
+        <div class="cat____img">
+          <a href="#"><img src="cat-2.png" /></a>
+        </div>
+        <div class="product___details mt-4">
+          <p><a href="#" class="text-dark product___name">Tea Lights</a></p>
+          <p class="text-muted product____info">
+            <a href="#" class="text-dark product___name">9 Products</a>
+          </p>
+          <p class="text-muted view___info">
+            <a href="#" class="text-dark product___name"
+              >View All <span class="iconify" data-icon="bi:arrow-right"></span
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div class="total___cat">
+        <div class="cat____img">
+          <a href="#"><img src="cat-2.png" /></a>
+        </div>
+        <div class="product___details mt-4">
+          <p><a href="#" class="text-dark product___name">Tea Lights</a></p>
+          <p class="text-muted product____info">
+            <a href="#" class="text-dark product___name">9 Products</a>
+          </p>
+          <p class="text-muted view___info">
+            <a href="#" class="text-dark product___name"
+              >View All <span class="iconify" data-icon="bi:arrow-right"></span
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div class="total___cat">
+        <div class="cat____img">
+          <a href="#"><img src="cat-2.png" /></a>
+        </div>
+        <div class="product___details mt-4">
+          <p><a href="#" class="text-dark product___name">Tea Lights</a></p>
+          <p class="text-muted product____info">
+            <a href="#" class="text-dark product___name">9 Products</a>
+          </p>
+          <p class="text-muted view___info">
+            <a href="#" class="text-dark product___name"
+              >View All <span class="iconify" data-icon="bi:arrow-right"></span
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div class="total___cat">
+        <div class="cat____img">
+          <a href="#"><img src="cat-2.png" /></a>
+        </div>
+        <div class="product___details mt-4">
+          <p><a href="#" class="text-dark product___name">Tea Lights</a></p>
+          <p class="text-muted product____info">
+            <a href="#" class="text-dark product___name">9 Products</a>
+          </p>
+          <p class="text-muted view___info">
+            <a href="#" class="text-dark product___name"
+              >View All <span class="iconify" data-icon="bi:arrow-right"></span
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div class="total___cat">
+        <div class="cat____img">
+          <a href="#"><img src="cat-2.png" /></a>
+        </div>
+        <div class="product___details mt-4">
+          <p><a href="#" class="text-dark product___name">Tea Lights</a></p>
+          <p class="text-muted product____info">
+            <a href="#" class="text-dark product___name">9 Products</a>
+          </p>
+          <p class="text-muted view___info">
+            <a href="#" class="text-dark product___name"
+              >View All <span class="iconify" data-icon="bi:arrow-right"></span
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div class="total___cat">
+        <div class="cat____img">
+          <a href="#"><img src="cat-2.png" /></a>
+        </div>
+        <div class="product___details mt-4">
+          <p><a href="#" class="text-dark product___name">Tea Lights</a></p>
+          <p class="text-muted product____info">
+            <a href="#" class="text-dark product___name">9 Products</a>
+          </p>
+          <p class="text-muted view___info">
+            <a href="#" class="text-dark product___name"
+              >View All <span class="iconify" data-icon="bi:arrow-right"></span
+            ></a>
+          </p>
+        </div>
+      </div>
+      <div class="total___cat">
+        <div class="cat____img">
+          <a href="#"><img src="cat-2.png" /></a>
+        </div>
+        <div class="product___details mt-4">
+          <p><a href="#" class="text-dark product___name">Tea Lights</a></p>
+          <p class="text-muted product____info">
+            <a href="#" class="text-dark product___name">9 Products</a>
+          </p>
+          <p class="text-muted view___info">
+            <a href="#" class="text-dark product___name"
+              >View All <span class="iconify" data-icon="bi:arrow-right"></span
+            ></a>
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <!-- category slider end -->
 
+    <!-- product card start -->
+    <div class="sub___main">
+      <p class="fw-bold fs-5 text-center">New Collection Best Seller</p>
+      <div class="main___product_____card">
+        <div class="total___wrap___class">
+          <div class="card_____wrapper">
+            <div class="product____img">
+              <div class="product____card">
+                <img src="pro.jpg" />
+              </div>
+            </div>
+            <div class="product____info">
+              <p>Lorem, ipsum dolor.</p>
+              <p class="product___price">$10000</p>
+              <p class="pro___cart">
+                <a href="#" class="text-dark change____cart"
+                  ><span
+                    class="iconify"
+                    data-icon="ant-design:shopping-cart-outlined"
+                  ></span>
+                  Add To Cart</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="hover____view">
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+          </div>
+        </div>
+        <div class="total___wrap___class">
+          <div class="card_____wrapper">
+            <div class="product____img">
+              <div class="product____card">
+                <img src="pro.jpg" />
+              </div>
+            </div>
+            <div class="product____info">
+              <p>Lorem, ipsum dolor.</p>
+              <p class="product___price">$10000</p>
+              <p class="pro___cart">
+                <a href="#" class="text-dark change____cart"
+                  ><span
+                    class="iconify"
+                    data-icon="ant-design:shopping-cart-outlined"
+                  ></span>
+                  Add To Cart</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="hover____view">
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+          </div>
+        </div>
+        <div class="total___wrap___class">
+          <div class="card_____wrapper">
+            <div class="product____img">
+              <div class="product____card">
+                <img src="pro.jpg" />
+              </div>
+            </div>
+            <div class="product____info">
+              <p>Lorem, ipsum dolor.</p>
+              <p class="product___price">$10000</p>
+              <p class="pro___cart">
+                <a href="#" class="text-dark change____cart"
+                  ><span
+                    class="iconify"
+                    data-icon="ant-design:shopping-cart-outlined"
+                  ></span>
+                  Add To Cart</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="hover____view">
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+          </div>
+        </div>
+        <div class="total___wrap___class">
+          <div class="card_____wrapper">
+            <div class="product____img">
+              <div class="product____card">
+                <img src="pro.jpg" />
+              </div>
+            </div>
+            <div class="product____info">
+              <p>Lorem, ipsum dolor.</p>
+              <p class="product___price">$10000</p>
+              <p class="pro___cart">
+                <a href="#" class="text-dark change____cart"
+                  ><span
+                    class="iconify"
+                    data-icon="ant-design:shopping-cart-outlined"
+                  ></span>
+                  Add To Cart</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="hover____view">
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+          </div>
+        </div>
+        <div class="total___wrap___class">
+          <div class="card_____wrapper">
+            <div class="product____img">
+              <div class="product____card">
+                <img src="pro.jpg" />
+              </div>
+            </div>
+            <div class="product____info">
+              <p>Lorem, ipsum dolor.</p>
+              <p class="product___price">$10000</p>
+              <p class="pro___cart">
+                <a href="#" class="text-dark change____cart"
+                  ><span
+                    class="iconify"
+                    data-icon="ant-design:shopping-cart-outlined"
+                  ></span>
+                  Add To Cart</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="hover____view">
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+          </div>
+        </div>
+        <div class="total___wrap___class">
+          <div class="card_____wrapper">
+            <div class="product____img">
+              <div class="product____card">
+                <img src="pro.jpg" />
+              </div>
+            </div>
+            <div class="product____info">
+              <p>Lorem, ipsum dolor.</p>
+              <p class="product___price">$10000</p>
+              <p class="pro___cart">
+                <a href="#" class="text-dark change____cart"
+                  ><span
+                    class="iconify"
+                    data-icon="ant-design:shopping-cart-outlined"
+                  ></span>
+                  Add To Cart</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="hover____view">
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+          </div>
+        </div>
+        <div class="total___wrap___class">
+          <div class="card_____wrapper">
+            <div class="product____img">
+              <div class="product____card">
+                <img src="pro.jpg" />
+              </div>
+            </div>
+            <div class="product____info">
+              <p>Lorem, ipsum dolor.</p>
+              <p class="product___price">$10000</p>
+              <p class="pro___cart">
+                <a href="#" class="text-dark change____cart"
+                  ><span
+                    class="iconify"
+                    data-icon="ant-design:shopping-cart-outlined"
+                  ></span>
+                  Add To Cart</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="hover____view">
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+          </div>
+        </div>
+        <div class="total___wrap___class">
+          <div class="card_____wrapper">
+            <div class="product____img">
+              <div class="product____card">
+                <img src="pro.jpg" />
+              </div>
+            </div>
+            <div class="product____info">
+              <p>Lorem, ipsum dolor.</p>
+              <p class="product___price">$10000</p>
+              <p class="pro___cart">
+                <a href="#" class="text-dark change____cart"
+                  ><span
+                    class="iconify"
+                    data-icon="ant-design:shopping-cart-outlined"
+                  ></span>
+                  Add To Cart</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="hover____view">
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+          </div>
+        </div>
+        <div class="total___wrap___class">
+          <div class="card_____wrapper">
+            <div class="product____img">
+              <div class="product____card">
+                <img src="pro.jpg" />
+              </div>
+            </div>
+            <div class="product____info">
+              <p>Lorem, ipsum dolor.</p>
+              <p class="product___price">$10000</p>
+              <p class="pro___cart">
+                <a href="#" class="text-dark change____cart"
+                  ><span
+                    class="iconify"
+                    data-icon="ant-design:shopping-cart-outlined"
+                  ></span>
+                  Add To Cart</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="hover____view">
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+          </div>
+        </div>
+        <div class="total___wrap___class">
+          <div class="card_____wrapper">
+            <div class="product____img">
+              <div class="product____card">
+                <img src="pro.jpg" />
+              </div>
+            </div>
+            <div class="product____info">
+              <p>Lorem, ipsum dolor.</p>
+              <p class="product___price">$10000</p>
+              <p class="pro___cart">
+                <a href="#" class="text-dark change____cart"
+                  ><span
+                    class="iconify"
+                    data-icon="ant-design:shopping-cart-outlined"
+                  ></span>
+                  Add To Cart</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="hover____view">
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+            <p class="tooltips">
+              <span class="iconify eye___icon" data-icon="mdi:eye"></span>
+              <span class="tooltiptext">Tooltip text</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- product card end -->
+
+    <!-- eco frindly start -->
+    <div class="eco____frindly____div p-5">
+      <div class="first____div">
+        <p class="text-center fs-5 fw-bold">
+          Eco-Friendly & Natural Ingredients
+        </p>
+        <div class="total___div___Wrap">
+          <div class="total___details___div">
+            <div class="first____details">
+              <div class="details1">
+                <p>
+                  <span
+                    class="iconify fs-1 frind_____icon"
+                    data-icon="emojione-monotone:candle"
+                  ></span>
+                </p>
+              </div>
+              <div class="details2 ps-3">
+                <p class="fw-bold">Lorem, ipsum dolor.</p>
+                <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="first____details mt-3">
+              <div class="details1">
+                <p>
+                  <span
+                    class="iconify fs-1 frind_____icon"
+                    data-icon="emojione-monotone:candle"
+                  ></span>
+                </p>
+              </div>
+              <div class="details2 ps-3">
+                <p class="fw-bold">Lorem, ipsum dolor.</p>
+                <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="first____details mt-3">
+              <div class="details1">
+                <p>
+                  <span
+                    class="iconify fs-1 frind_____icon"
+                    data-icon="emojione-monotone:candle"
+                  ></span>
+                </p>
+              </div>
+              <div class="details2 ps-3">
+                <p class="fw-bold">Lorem, ipsum dolor.</p>
+                <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="first____details mt-3">
+              <div class="details1">
+                <p>
+                  <span
+                    class="iconify fs-1 frind_____icon"
+                    data-icon="emojione-monotone:candle"
+                  ></span>
+                </p>
+              </div>
+              <div class="details2 ps-3">
+                <p class="fw-bold">Lorem, ipsum dolor.</p>
+                <p class="text-muted">Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="next____img____div">
+            <img src="friend.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- eco frindly end -->
+
+    <!-- all kind words start -->
+    <div class="main____words___wrap p-5">
+      <p class="text-center fs-3 fw-bold">All That Kind Words</p>
+      <div class="main_____wrods____wrap">
+        <div class="words_____wrap">
+          <p class="text-muted fw-bold">
+            I love this candle so much! I always buy one at the start of the
+            holiday season. The scent reminds me of when I was a little girl in
+            Oregon on Christmas Day.
+          </p>
+          <p class="text-muted fw-bold">Lorem, ipsum.</p>
+        </div>
+        <div class="words_____wrap">
+          <p class="text-muted fw-bold">
+            I love this candle so much! I always buy one at the start of the
+            holiday season. The scent reminds me of when I was a little girl in
+            Oregon on Christmas Day.
+          </p>
+          <p class="text-muted fw-bold">Lorem, ipsum.</p>
+        </div>
+        <div class="words_____wrap">
+          <p class="text-muted fw-bold">
+            I love this candle so much! I always buy one at the start of the
+            holiday season. The scent reminds me of when I was a little girl in
+            Oregon on Christmas Day.
+          </p>
+          <p class="text-muted fw-bold">Lorem, ipsum.</p>
+        </div>
+      </div>
+    </div>
+    <!-- all kind words end -->
+
+    <!-- full screen image grid start -->
+    <div class="main_____class____gird">
+      <div class="box snake">
+        <img src="cat-1.png" />
+        <div class="overlay">
+          <p><span class="iconify" data-icon="el:search-alt"></span></p>
+        </div>
+      </div>
+      <div class="box snake">
+        <img src="cat-2.png" />
+        <div class="overlay">
+          <p><span class="iconify" data-icon="el:search-alt"></span></p>
+        </div>
+      </div>
+      <div class="box snake">
+        <img src="cat-1.png" />
+        <div class="overlay">
+          <p><span class="iconify" data-icon="el:search-alt"></span></p>
+        </div>
+      </div>
+      <div class="box snake">
+        <img src="cat-2.png" />
+        <div class="overlay">
+          <p><span class="iconify" data-icon="el:search-alt"></span></p>
+        </div>
+      </div>
+      <div class="box snake">
+        <img src="cat-1.png" />
+        <div class="overlay">
+          <p><span class="iconify" data-icon="el:search-alt"></span></p>
+        </div>
+      </div>
+      <div class="box snake">
+        <img src="cat-2.png" />
+        <div class="overlay">
+          <p><span class="iconify" data-icon="el:search-alt"></span></p>
+        </div>
+      </div>
+      <div class="box snake">
+        <img src="cat-1.png" />
+        <div class="overlay">
+          <p><span class="iconify" data-icon="el:search-alt"></span></p>
+        </div>
+      </div>
+      <div class="box snake">
+        <img src="cat-2.png" />
+        <div class="overlay">
+          <p><span class="iconify" data-icon="el:search-alt"></span></p>
+        </div>
+      </div>
+    </div>
+    <!-- full screen image grid end -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="snake.js"></script>
+    <script src="snake.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="theme.js"></script>
   </body>
-  <script src="theme.js"></script>
-
 </html>
